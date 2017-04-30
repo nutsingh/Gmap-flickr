@@ -1,0 +1,64 @@
+#map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.picture-display-outer-wrapper {
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: white;
+    padding: 10px;
+}
+.picture-display-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.picture-display-wrapper img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2px;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    #map {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .picture-display-outer-wrapper {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    #map {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .picture-display-outer-wrapper {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+}

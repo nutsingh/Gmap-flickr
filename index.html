@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myMaps">
+<head>
+    <meta charset="UTF-8">
+    <title>Google map</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAktTAFBhdmvi2GMKsvswYncEmuCAyxkwA&language=en" ></script>
+    <script src="script.js"></script>
+</head>
+
+<body ng-controller="myController">
+    <div>
+        <div id="map"></div>
+        <div class="picture-display-outer-wrapper" ng-show="locatePin">
+            <div class="picture-display-wrapper">
+                <div ng-repeat="pic in pictureDisplay">
+                    <img src="{{pic.img}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
