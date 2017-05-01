@@ -14,7 +14,7 @@ myMap.config(function ($routeProvider) {
 // controller definition
 myMap.controller('myController', function ($scope) {
     $scope.locatePin = false;
-    $scope.flickrApiKey = '87c9c371d7fbeb5b5e1da8a1453d9ea0';
+    $scope.flickrApiKey = 'e9fae19e32def44aee25d0ac3dabb639';
     $scope.mapOptions = {
         zoom: 8,
         center: new google.maps.LatLng(40.0000, -98.0000),
